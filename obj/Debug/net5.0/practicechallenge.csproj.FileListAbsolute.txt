@@ -28,7 +28,6 @@ C:\Users\Jad\Desktop\Github stuff\practicechallenge\obj\Debug\net5.0\staticwebas
 C:\Users\Jad\Desktop\Github stuff\practicechallenge\obj\Debug\net5.0\staticwebassets\practicechallenge.StaticWebAssets.xml
 C:\Users\Jad\Desktop\Github stuff\practicechallenge\obj\Debug\net5.0\scopedcss\bundle\practicechallenge.styles.css
 C:\Users\Jad\Desktop\Github stuff\practicechallenge\obj\Debug\net5.0\practicechallenge.RazorTargetAssemblyInfo.cache
-C:\Users\Jad\Desktop\Github stuff\practicechallenge\obj\Debug\net5.0\practicechallenge.csproj.CopyComplete
 C:\Users\Jad\Desktop\Github stuff\practicechallenge\obj\Debug\net5.0\practicechallenge.dll
 C:\Users\Jad\Desktop\Github stuff\practicechallenge\obj\Debug\net5.0\ref\practicechallenge.dll
 C:\Users\Jad\Desktop\Github stuff\practicechallenge\obj\Debug\net5.0\practicechallenge.pdb
