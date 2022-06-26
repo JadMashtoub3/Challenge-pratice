@@ -60,3 +60,30 @@ BEGIN
     END CATCH
 END
 GO
+
+-- add owner
+IF OBJECT_ID('ADD_OWNER') IS NOT NULL
+    DROP PROCEDURE ADD_OWNER
+GO
+
+CREATE PROCEDURE ADD_OWNER
+    @pownerID INT OUTPUT,
+    @psurname NVARCHAR(50),
+    @pfirstname NVARCHAR(50),
+    @pphone INT
+AS
+BEGIN
+    BEGIN TRY
+        INSERT INTO [Owner]
+        (ownerID, surname, firstname, phone)
+    VALUES
+        (@pownerID, @psurname, @pfirstname, @pphone)
+    END TRY
+    BEGIN CATCH
+    IF ERROR_NUMBER() = 2627
+            THROW 50020, 'unable to add Owner', 1
+    END CATCH
+
+    RETURN @pownerID
+END
+GO

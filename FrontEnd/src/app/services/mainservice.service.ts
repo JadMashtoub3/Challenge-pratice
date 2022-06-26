@@ -7,7 +7,9 @@ import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
   providedIn: 'root'
 })
 export class MainService {
-  readonly baseUrl: string = "https://localhost:5001";
+  // readonly baseUrl: string = "https://localhost:5001";
+     readonly baseUrl: string = "https://pracchal.azurewebsites.net";
+
 
   constructor(private _http: HttpClient) { }
 
@@ -26,26 +28,26 @@ export class MainService {
 
 }
 export interface Owner {
-  OwnerID: number;
-  Surname: string;
-  FirstName: string;
-  Phone: number;
+  ownerID: number;
+  surname: string;
+  firstname: string;
+  phone: number;
 }
 export interface Pet {
-  OwnerID: number;
-  PetName: string;
-  Type: string;
+  ownerID: number;
+  petname: string;
+  type: string;
 }
 export interface Procedure {
-  ProcedureID: number;
-  Description: string;
-  Price: number;
+  procedureID: number;
+  description: string;
+  price: number;
 }
 export interface Treatment {
-  OwnerID: number;
-  ProcedureID: number;
-  PetID: number;
-  Date: Date;
-  Notes: string;
-  Payment: number;
+  ownerID: number;
+  procedureID: number;
+  petName: string;
+  treatmentDate: Date;
+  notes: string;
+  payment: number;
 }
